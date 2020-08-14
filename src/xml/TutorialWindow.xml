@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+    <icon file="src/graphics/TutorialTitle.png" name="TutorialTitle" />
+    <windowclass name="TutorialWindow">
+        <frame>campaignlistwithtabs</frame>
+        <sizelimits>
+            <dynamic />
+        </sizelimits>
+        <script>
+            function onInit()
+                --[[ Self points to a windowinstance, in this case. ]]
+                Debug.console("self", self)
+                Debug.console("getclass", self.getClass())
+                Debug.console("getDatabaseNode", self.getDatabaseNode())
+                Debug.console("getFrame", self.getFrame())
+            end
+        </script>
+        <sheetdata>
+            <banner_campaign>
+                <icon>TutorialTitle</icon>
+            </banner_campaign>
+            <close_camapignlist />
+                <resize_campaignlistwithtabs />
+        </sheetdata>
+    </windowclass>
+</root>

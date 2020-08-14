@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Minimum vialable product -->
+<root release="3.0" version="3">
+    <properties>
+        <name>Extension Tutorial - Jeffery W Redding</name>
+        <version>0.0.1</version>
+        <author>Jeffery W Redding</author>
+        <description>
+            A really simple extension file for
+            creating a really simple extension
+        </description>
+    </properties>
+    <base>
+        <includefile source="src/xml/TutorialWindow.xml" />
+    </base>
+</root>
