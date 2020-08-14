@@ -11,6 +11,9 @@
         </description>
     </properties>
     <base>
+        <icon file="src/graphics/TutorialTitle5e.png" name="TutorialTitle5e" />
+        <icon file="src/graphics/TutorialTitle.png" name="TutorialTitle" />
+        <script name="ExtTutorial" file="src/lua/ExtensionTutorial.lua" />
         <includefile source="src/xml/TutorialWindow.xml" />
     </base>
 </root>

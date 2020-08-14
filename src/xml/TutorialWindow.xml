@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root>
-    <icon file="src/graphics/TutorialTitle.png" name="TutorialTitle" />
     <windowclass name="TutorialWindow">
         <frame>campaignlistwithtabs</frame>
         <sizelimits>
@@ -17,6 +16,12 @@
         </script>
         <sheetdata>
             <banner_campaign>
+                <script>
+                    function onInit()
+                        Debug.console("self", self)
+                        ExtTutorial.setIconByRuleset(self)
+                    end
+                </script>
                 <icon>TutorialTitle</icon>
             </banner_campaign>
             <close_camapignlist />
