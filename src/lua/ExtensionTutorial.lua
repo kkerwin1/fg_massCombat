@@ -18,3 +18,14 @@ function setIconByRuleset(windowcontrol)
         windowcontrol.setIcon("TutorialTitle", true)
     end
 end
+
+function onInit()
+    --[[
+        Initialization function for this package.
+    ]]
+    if(User.isHost()) then
+        DesktopManager.registerStackShortcut2("button_ExtTut",
+            "button_ExtTut_down", "sidebar_tooltip_ExtTut",
+            "TutorialWindow", "ExtTutorial");
+    end
+end

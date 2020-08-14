@@ -11,9 +11,18 @@
         </description>
     </properties>
     <base>
-        <icon file="src/graphics/TutorialTitle5e.png" name="TutorialTitle5e" />
-        <icon file="src/graphics/TutorialTitle.png" name="TutorialTitle" />
+        <icon name="ExtTutorialLogo" file="src/graphics/ExtTutorialLogo.png" />
+        <icon name="TutorialTitle5E" file="src/graphics/TutorialTitle5E.png" />
+        <icon name="TutorialTitle" file="src/graphics/TutorialTitle.png" />
+        <icon name="button_ExtTut" file="src/graphics/button_ExtTut.png" />
+        <icon name="button_ExtTut_down" file="src/graphics/button_ExtTut_down.png" />
+        
         <script name="ExtTutorial" file="src/lua/ExtensionTutorial.lua" />
+        
         <includefile source="src/xml/TutorialWindow.xml" />
+        <includefile source="src/xml/ExtTutorial_Templates.xml" />
+        
+        <string name="sidebar_tooltip_ExtTut">Extension Tutorial</string>
+        <string name="sidebar_tooltip_chatnom">Chatnomicon</string>
     </base>
 </root>

@@ -24,8 +24,15 @@
                 </script>
                 <icon>TutorialTitle</icon>
             </banner_campaign>
-            <close_camapignlist />
-                <resize_campaignlistwithtabs />
+            <button_edit_entries name="list_edit">
+                <script>
+                    function onValueChanged()
+                        window.list_add.setVisible(getValue() == 1);
+                    end
+                </script>
+            </button_edit_entries>
+            <button_add_entry name="list_add" />
+            <resize_campaignlistwithtabs />
         </sheetdata>
     </windowclass>
 </root>

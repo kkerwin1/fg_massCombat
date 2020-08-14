@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+    
+    <!-- Template for the button that turons on the add and delete buttons -->
+    <template name="button_edit_entries">
+        <buttoncontrol>
+            <anchored width="20" height="20">
+                <position>insidebottomright</position>
+                <top anchor="bottom" offset="-90" />
+                <right offset="-30" />
+            </anchored>
+            <state icon="button_edit" tooltipres="button_editon" />
+            <state icon="button_edit_down" tooltipres="button_editoff" />
+        </buttoncontrol>
+    </template>
+    
+    <!-- Template for the button that adds a chat message node -->
+    <template name="button_add_entry">
+        <buttoncontrol>
+            <anchored width="20" height="20" to="list_edit" position="left">
+                <offset>5,0</offset>
+            </anchored>
+            <icon normal="button_add" pressed="button_add_down" />
+            <tooltip textres="button_add" />
+            <invisible />
+        </buttoncontrol>
+    </template>
+    
+</root>
